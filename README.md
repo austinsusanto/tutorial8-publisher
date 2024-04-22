@@ -17,3 +17,9 @@ It means the publisher program will send the message to the same server where th
 ![Terminal Screenshot](/assets/terminal.png)
 
 The bottom terminal is the docker terminal. The left is publisher and the right is subscriber. From the screenshot, we can see that the subscriber terminal generates the same value which are printed in the publisher when _cargo run_ was run. This shows that the message was succesfully sent with RabbitMQ.
+
+# RabbitMQ Message Rate Chart
+
+![Message Rate Chart](/assets/message-rate.png)
+
+By running the publisher program repeatedly in a short period of time, we can see that the chart shows bigger spikes. The chart itself shows the message rate in the last minute. By running the publisher program repeatedly, more messages will be sent thus creating a spike in the chart.
